@@ -32,10 +32,13 @@ Select any view (LinearLayout, CardView) and pass it to the 'getScreenshot' func
     }
 ```
 
+Save on button click
 ```java
-String fileName ="Screenshot";//any given name
-layout = findViewById(R.id.layout);
-store(getScreenShot(layout),fileName+".jpg");
+   btnPrint.setOnClickListener(view -> {
+            String fileName ="Screenshot";//any given name
+            layout = findViewById(R.id.layout);
+            store(getScreenShot(layout),fileName);
+    });
 ```
 2) The captured screenshot will be saved inside the "Azhar" directory.
 
@@ -59,9 +62,11 @@ Directory 'Azhar'  will be created in Pictures and bitmap( from getScreenShot fu
         }
     }
 ```
-
+Save on button click
 ```java
-String fileName ="Screenshot";//any given name
-layout = findViewById(R.id.layout);
-store(getScreenShot(layout),fileName+".jpg");
+    btnPrint.setOnClickListener(view -> {
+            String fileName ="Screenshot";//any given name
+            layout = findViewById(R.id.layout);
+            store(getScreenShot(layout),fileName);
+    });
 ```
